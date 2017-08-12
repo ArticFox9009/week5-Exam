@@ -5,20 +5,16 @@ object Maj1Ws {
   
   //item #1
   def fib(n:Int): Int = {
-  
-  val n1 = (n<=0);
-  val n2 = (n<=1);
-  
-  if(n1){
-  	0
-  	}else if(n2){
-  		0
+  if(n==1){
+  	1
+  	}else if(n==2){
+  		1
   	}else{
   		fib(n-1) + fib(n-2);
   	}
   	
   }                                               //> fib: (n: Int)Int
-  fib(6);                                         //> res0: Int = 0
+  fib(6);                                         //> res0: Int = 8
   
   //item #2
   def fizzString(fizzBuzzString:String):String = {
